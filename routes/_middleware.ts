@@ -17,6 +17,9 @@ export async function handler(
   const rExp : RegExp = /(.+\/\/)/;
   
   let domain_long = url.replace(rExp, '');
+
+  console.log('domain long is: ', domain_long);
+
   let domain = domain_long.replace('\/', '');
 
   console.log('domain is: ', domain);
