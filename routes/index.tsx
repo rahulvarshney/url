@@ -11,7 +11,6 @@ import Counter from "../islands/Counter.tsx";
       }
 }*/
 
-console.log('hello from index, locaiton is:', location.href);
 
 export default function Home() {
   return (
