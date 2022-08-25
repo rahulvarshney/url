@@ -11,6 +11,16 @@ export async function handler(
   req: Request,
   ctx: MiddlewareHandlerContext<State>,
 ) {
+
+  const url = req.url;
+
+  const rExp : RegExp = /(.+\/\/)/;
+  
+  let domain_long = url.replace(rExp, '');
+  let domain = domain_long.replace('\/', '');
+
+  console.log('domain is: ', domain);
+  
   console.log('_middleware')
     console.log(req.url);
     console.log('_middleware end ABBIE');
