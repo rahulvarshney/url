@@ -12,7 +12,7 @@ import Counter from "../islands/Counter.tsx";
 }*/
 
 
-export default function Home() {
+export default function Home({ url }) {
   return (
     <div class={tw`p-4 mx-auto max-w-screen-md`}>
       <img
@@ -21,7 +21,7 @@ export default function Home() {
         alt="the fresh logo: a sliced lemon dripping with juice"
       />
       <p class={tw`my-6`}>
-        222 URL URL URL 0-0-1 
+        222 URL URL URL 0-0-2  { url.href }
       </p>
       <Counter start={3} />
     </div>
