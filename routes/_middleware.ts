@@ -11,9 +11,9 @@ export async function handler(
   req: Request,
   ctx: MiddlewareHandlerContext<State>,
 ) {
-  console.log('ABBIE')
+  console.log('_middleware')
     console.log(req.url);
-    console.log('END ABBIE');
+    console.log('_middleware end ABBIE');
   ctx.state.data = req.url;
   const resp = await ctx.next();
   resp.headers.set("server", "fresh server");

@@ -21,7 +21,7 @@ export default function Home() {
         alt="the fresh logo: a sliced lemon dripping with juice"
       />
       <p class={tw`my-6`}>
-        222 URL URL URL 0-0-1 { location.href }
+        222 URL URL URL 0-0-1 
       </p>
       <Counter start={3} />
     </div>
